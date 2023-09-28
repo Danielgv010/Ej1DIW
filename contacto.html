@@ -28,35 +28,29 @@
     </nav>
     <section>
         <article>
-            <div class="wrapper">
-                <div class="form50">
-                    <img src="img/form.jpeg">
-                </div>
-                <div class="form50 form-div">
-                    <form action="" method="get">
-                        <div>
-                            <label for="nombre">Nombre:</label>
-                            <input type="nombre">
-                        </div>
-                        <div>
-                            <label for="apellido1">Primer apellido:</label>
-                            <input type="apellido1">
-                        </div>
-                        <div>
-                            <label for="apellido2">Segundo apellido:</label>
-                            <input type="apellido2">
-                        </div>
-                        <div>
-                            <label for="email">Email:</label>
-                            <input type="email">
-                        </div>
-                        <div>
-                            <label for="tlf">Teléfono:</label>
-                            <input type="tlf">
-                        </div>
-                    </form>
-                </div>
-            </div>
+            <form>
+                <label for="nombre">Nombre*</label>
+                <input type="text" name="nombre" required>
+                <label for="apellido1">Primer apellido*</label>
+                <input type="text" name="apellido1" required>
+                <label for="apellido2">Segundo apellido*</label>
+                <input type="text" name="apellido2" required>
+                <label for="tlf">Telefono</label>
+                <select name="prefijo">
+                    <option value="34">+34</option>
+                    <option value="54">+54</option>
+                </select>
+                <input type="text" name="tlf">
+                <label for="mail">Email*</label>
+                <input type="email" name="mail" required>
+                <label for="fecha">Fecha de nacimiento*</label>
+                <input type="date" name="fecha" required>
+                <label for="sexo">Sexo</label>
+                <input type="radio" name="sexo" value="Hombre">
+                <input type="radio" name="sexo" value="Mujer">
+                <input type="checkbox" name="notificacion">
+                <label for="notificacion">Quiero recibir notificaciones por correo</label>
+            </form>
         </article>
     </section>
     <footer>
