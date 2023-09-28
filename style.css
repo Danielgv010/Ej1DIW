@@ -1,6 +1,12 @@
-body {
+.body-blk {
     background: black;
     color: #FAFAFA;
+    margin: 0;
+    padding: 0;
+}
+.body-wh {
+    background: #f8f3e2;
+    color: #141414;
     margin: 0;
     padding: 0;
 }
@@ -8,6 +14,7 @@ body {
 header {
     position: relative;
     background: #141414;
+    color: #FAFAFA;
     margin: 0;
     padding: 1%;
 }
@@ -17,6 +24,7 @@ nav {
     top: 0;
     display: flex;
     background: #141414;
+    color: #FAFAFA;
     z-index: 50;
 }
 
@@ -42,7 +50,45 @@ h2 {
     text-align: center;
     margin: 0;
 }
-
+.outer-wrapper{
+    position: relative;
+    display: flex;
+    width:100%;
+    height: 40em;
+    justify-content: center;
+    align-items: center;
+}
+.inner-wrapper{
+    display: flex;
+    width:60%;
+    height: 100%;
+}
+.form50{
+    width:50%;
+    background: #141414;
+    color: #FAFAFA;
+    height: 100%;
+    overflow:hidden;
+}
+.form50 img{
+    width: 100%;
+    height: auto;
+}
+form{
+    padding:10%;
+}
+form *{
+    display: block;
+}
+form .inputtxt{
+    width: 80%;
+}
+.prefix{
+    width:15%;
+}
+.inline{
+    display: inline !important;
+}
 .horario {
     position: absolute;
     border-collapse: collapse;
@@ -50,10 +96,11 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 2px 5px 4px 5px #837c6a;
 }
 
 .horario * {
-    border: 1px solid #FAFAFA;
+    border: 1px solid #141414;
     padding: 1%;
     text-align: center;
 }
@@ -96,7 +143,7 @@ h2 {
 
 .underline {
     display: block;
-    border: 3px solid #FA0000;
+    border: 3px solid #dd00dd;
     width: 80%;
     margin: auto;
 }
@@ -153,7 +200,7 @@ h2 {
 }
 
 .lists ul {
-    border-bottom: 3px solid #FA0000;
+    border-bottom: 3px solid #dd00dd;
 }
 
 .lists ul li {

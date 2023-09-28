@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="body-wh">
     <header>
         <h1>TÉCNICO SUPERIOR EN DESARROLLO DE APLICACIONES WEB</h1>
     </header>
@@ -28,33 +28,44 @@
     </nav>
     <section>
         <article>
-            <form>
-                <label for="nombre">Nombre*</label>
-                <input type="text" name="nombre" required>
-                <label for="apellido1">Primer apellido*</label>
-                <input type="text" name="apellido1" required>
-                <label for="apellido2">Segundo apellido*</label>
-                <input type="text" name="apellido2" required>
-                <label for="tlf">Telefono</label>
-                <select name="prefijo">
-                    <option value="34">+34</option>
-                    <option value="54">+54</option>
-                </select>
-                <input type="text" name="tlf">
-                <label for="mail">Email*</label>
-                <input type="email" name="mail" required>
-                <label for="fecha">Fecha de nacimiento*</label>
-                <input type="date" name="fecha" required>
-                <label for="sexo">Sexo</label>
-                <input type="radio" name="sexo" value="Hombre">
-                <input type="radio" name="sexo" value="Mujer">
-                <input type="checkbox" name="notificacion">
-                <label for="notificacion">Quiero recibir notificaciones por correo</label>
-            </form>
+            <div class="outer-wrapper">
+                <div class="inner-wrapper">
+                    <div class="form50 left">
+                        <img src="img/form.jpeg">
+                    </div>
+                    <div class="form50 right">
+                        <form>
+                            <label for="nombre">Nombre*</label>
+                            <input type="text" name="nombre" class="inputtxt" required>
+                            <label for="apellido1">Primer apellido*</label>
+                            <input type="text" name="apellido1" class="inputtxt" required>
+                            <label for="apellido2">Segundo apellido*</label>
+                            <input type="text" name="apellido2" class="inputtxt" required>
+                            <label for="tlf">Telefono</label>
+                            <select name="prefijo" class="inline prefix">
+                                <option value="34">+34</option>
+                                <option value="54">+54</option>
+                            </select>
+                            <input type="text" name="tlf" class="inline">
+                            <label for="mail">Email*</label>
+                            <input type="email" name="mail" class="inputtxt" required>
+                            <label for="fecha">Fecha de nacimiento*</label>
+                            <input type="date" name="fecha" class="inputtxt" required>
+                            <label for="sexo">Sexo</label>
+                            <div>
+                                <input type="radio" name="sexo" value="Hombre" class="inline">
+                                <input type="radio" name="sexo" value="Mujer" class="inline">
+                            </div>
+                            <input type="checkbox" name="notificacion" class="inline">
+                            <label for="notificacion" class="inline">Quiero recibir notificaciones por correo</label>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </article>
     </section>
     <footer>
-        
+
     </footer>
 </body>
 
