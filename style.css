@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
 }
+
 .body-wh {
     background: #f8f3e2;
     color: #141414;
@@ -50,62 +51,92 @@ h2 {
     text-align: center;
     margin: 0;
 }
-.outer-wrapper{
+
+.asignaturas {
+    display: flex;
+    justify-content: center;
+}
+
+.left-h2 {
+    text-align: left !important;
+}
+
+.somos-div {
+    background: #faf9f4;
+    border-radius: 5%;
+}
+
+.outer-wrapper {
     position: absolute;
     display: flex;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     bottom: 0;
     z-index: -1;
     justify-content: center;
     align-items: center;
-    background:linear-gradient(#a0210c,transparent),#f56a56
+    background: linear-gradient(#a0210c, transparent), #f56a56
 }
-.inner-wrapper{
+
+.inner-wrapper {
     display: flex;
     align-self: center;
     justify-content: center;
     align-items: center;
-    width:60%;
+    width: 60%;
     height: 60%;
 }
-.form50{
-    width:30%;
+
+.form50 {
+    width: 30%;
     background: #141414;
     color: #FAFAFA;
     height: 100%;
-    overflow:hidden;
+    overflow: hidden;
 }
-.left{
-    border-top-left-radius:4%;
+
+.left {
+    border-top-left-radius: 4%;
     border-bottom-left-radius: 4%;
 }
-.right{
-    border-top-right-radius:4%;
+
+.right {
+    border-top-right-radius: 4%;
     border-bottom-right-radius: 4%;
 
 }
-.form50 img{
+
+.form50 img {
     width: auto;
     height: 100%;
-    border-top-left-radius:inherit;
+    border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
 }
-form{
-    padding:10%;
+
+form {
+    padding: 10%;
 }
-form *{
+
+form * {
     display: block;
 }
-form .inputtxt{
+
+.marg-bot {
+    margin-bottom: 5%;
+}
+
+form .inputtxt {
     width: 80%;
 }
-.prefix{
-    width:15%;
+
+.prefix {
+    width: 15%;
 }
-.inline{
+
+.inline {
     display: inline !important;
 }
+
 .horario {
     position: absolute;
     border-collapse: collapse;
@@ -114,6 +145,10 @@ form .inputtxt{
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 2px 5px 4px 5px #837c6a;
+}
+
+.button {
+    float: right;
 }
 
 .horario * {
@@ -160,9 +195,13 @@ form .inputtxt{
 
 .underline {
     display: block;
-    border: 3px solid #dd00dd;
+    border: 3px solid #a0210c;
     width: 80%;
-    margin: auto;
+    margin: 2%;
+}
+
+.whole {
+    width: 95% !important;
 }
 
 .banner-div {
@@ -195,7 +234,7 @@ form .inputtxt{
     text-align: left;
     color: white;
     font-weight: bold;
-    
+
 }
 
 .transition {
@@ -216,8 +255,8 @@ form .inputtxt{
     margin-right: 2%;
 }
 
-.lists ul {
-    border-bottom: 3px solid #dd00dd;
+.list-underline {
+    border-bottom: 3px solid #a0210c;
 }
 
 .lists ul li {
@@ -233,16 +272,21 @@ form .inputtxt{
     .banner-text {
         font-size: 0.7em;
     }
-    .outer-wrapper{
+
+    .outer-wrapper {
         height: 100%;
     }
-    .inner-wrapper{
+
+    .inner-wrapper {
         display: block;
     }
-    .form50{
+
+    .form50 {
         width: 100%;
     }
-    .left,.right{
+
+    .left,
+    .right {
         border-radius: 0;
     }
 }

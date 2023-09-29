@@ -36,30 +36,38 @@
                     <div class="form50 right">
                         <form>
                             <label for="nombre">Nombre*</label>
-                            <input type="text" name="nombre" class="inputtxt" placeholder="Introduce tu nombre" required>
+                            <input type="text" name="nombre" class="inputtxt marg-bot" placeholder="Introduce tu nombre"
+                                required>
                             <label for="apellido1">Primer apellido*</label>
-                            <input type="text" name="apellido1" class="inputtxt" placeholder="Introduce tu primer apellido" required>
+                            <input type="text" name="apellido1" class="inputtxt marg-bot"
+                                placeholder="Introduce tu primer apellido" required>
                             <label for="apellido2">Segundo apellido*</label>
-                            <input type="text" name="apellido2" class="inputtxt" placeholder="Introduce tu segund apellido" required>
+                            <input type="text" name="apellido2" class="inputtxt marg-bot"
+                                placeholder="Introduce tu segund apellido" required>
                             <label for="tlf">Telefono</label>
                             <select name="prefijo" class="inline prefix">
                                 <option value="34">+34</option>
                                 <option value="54">+54</option>
                             </select>
-                            <input type="text" name="tlf" class="inline" placeholder="Introduce tu número">
+                            <input type="text" name="tlf" class="inline marg-bot" placeholder="Introduce tu número">
                             <label for="mail">Email*</label>
-                            <input type="email" name="mail" class="inputtxt" placeholder="Introduce tu email" required>
+                            <input type="email" name="mail" class="inputtxt marg-bot" placeholder="Introduce tu email"
+                                required>
                             <label for="fecha">Fecha de nacimiento*</label>
-                            <input type="date" name="fecha" class="inputtxt" required>
+                            <input type="date" name="fecha" class="inputtxt marg-bot" required>
                             <label for="sexo">Sexo</label>
-                            <div>
+                            <div class="marg-bot">
                                 <input type="radio" name="sexo" value="Hombre" class="inline">
                                 <label for="Hombre" class="inline">Hombre</label>
                                 <input type="radio" name="sexo" value="Mujer" class="inline">
                                 <label for="Mujer" class="inline">Mujer</label>
                             </div>
-                            <input type="checkbox" name="notificacion" class="inline">
-                            <label for="notificacion" class="inline">Quiero recibir notificaciones por correo</label>
+                            <div class="marg-bot">
+                                <input type="checkbox" name="notificacion" class="inline">
+                                <label for="notificacion" class="inline">Quiero recibir notificaciones por
+                                    correo</label>
+                            </div>
+                            <input type="submit" class="button">
                         </form>
                     </div>
                 </div>
